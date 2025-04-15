@@ -1,0 +1,75 @@
+.HomeContainer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.apresentationContainer{
+      display: flex;
+      flex-direction: column;
+      margin: 150px;
+      gap: 10px;
+}
+
+h1{
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 3rem;
+}
+
+.textDeveloper{
+      font-family: "Inter", sans-serif;
+      font-size: 1.25rem;
+      color: rgba(136, 136, 132, 0.637);
+      font-style: italic;
+}
+
+.nome {
+  display: block;
+  color: rgb(116, 255, 2);
+  font-weight: 800;
+  
+}
+
+.nome::before{
+      content: "<";
+}
+
+.nome::after{
+      content: "/>";
+}
+
+.aboutMe{
+      width: 180px;
+      text-align: center;
+      text-decoration: none;
+      padding: 10px;
+      border: 1px solid rgb(116, 255, 2);
+      border-radius: 20px;
+      background-color: transparent;
+      color: rgb(255, 255, 255);
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      transition: background-color 0.4s ease;
+}
+
+
+.aboutMe:hover{
+      background-color: rgb(116, 255, 2);
+      color: black;
+      cursor: pointer;
+}
