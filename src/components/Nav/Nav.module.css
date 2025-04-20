@@ -15,9 +15,19 @@ nav{
 
 .navLink{
       text-decoration: none;
-      color: #4DB6AC;
+      color: #ffffff;
       font-family: "Inter", sans-serif;
       font-weight: 700;
       padding-inline: 15px;
       padding-block: 15px;
+}
+
+.navLink:hover{
+      color: rgb(6, 191, 237);
+}
+
+@media (max-width: 510px) {
+      nav{
+            display: none;
+      }
 }
