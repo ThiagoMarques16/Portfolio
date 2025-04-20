@@ -7,23 +7,23 @@ import BannerImage from './BannerImage'
 function Home() {
   const [mostrarPagina, setMostrarPagina] = useState(false)
 
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver((entries) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         entry.target.classList.add(styles.show)
-  //         observer.unobserve(entry.target)
-  //       }
-  //     })
-  //   })
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(styles.show)
+          observer.unobserve(entry.target)
+        }
+      })
+    })
 
-  //   const hiddenElements = document.querySelectorAll(`.${styles.hidden}`)
-  //   hiddenElements.forEach((el) => observer.observe(el))
+    const hiddenElements = document.querySelectorAll(`.${styles.hidden}`)
+    hiddenElements.forEach((el) => observer.observe(el))
 
-  //   return () => {
-  //     hiddenElements.forEach((el) => observer.unobserve(el))
-  //   }
-  // }, [])
+    return () => {
+      hiddenElements.forEach((el) => observer.unobserve(el))
+    }
+  }, [])
 
   const ativarPagina = () => setMostrarPagina(true)
   const fecharPagina = () => setMostrarPagina(false)
