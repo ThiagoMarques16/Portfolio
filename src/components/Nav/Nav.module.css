@@ -7,10 +7,16 @@ nav{
       display: flex;
       width: 100vw;
       height: 70px;
-      justify-content: center;
       position: fixed;
-      align-items: center;
-      gap: 25px;
+}
+
+.navItens{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      height: 100%;
+      gap: 30px;
+      padding-top: 15px;
 }
 
 .navLink{
@@ -22,12 +28,31 @@ nav{
       padding-block: 15px;
 }
 
+.navLink img{
+      display: none;
+}
+
 .navLink:hover{
       color: rgb(6, 191, 237);
 }
 
-@media (max-width: 510px) {
-      nav{
-            display: none;
+@media (max-width: 571px) {
+      .navLink{
+            display: flex;
+            font-size: 12px;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+      }
+
+      .navLink img{
+            display: flex;
+            width: 24px;
+      }
+}
+
+@media (max-width: 446px) {
+      .navItens{
+            gap: 10px;
       }
 }
