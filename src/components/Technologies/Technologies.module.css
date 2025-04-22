@@ -20,11 +20,7 @@
       max-height: 100%;
       gap: 15px;
       flex-wrap: wrap;
+      margin: 0px 30px;
+
 }
 
-.technologies div{
-      background-color: aqua;
-      width: 250px;
-      height: 200px;
-      margin-top: 5%;
-}
