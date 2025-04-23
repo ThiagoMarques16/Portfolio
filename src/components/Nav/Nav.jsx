@@ -4,30 +4,33 @@ import webDevelopment from '../../img/web-development.png'
 import project from '../../img/project.png'
 import contact from '../../img/contact.png'
 
-function Nav(){
-      return(
+function Nav({ homeRef, techRef }) {
+      const scrollToSection = (ref) => {
+            ref.current?.scrollIntoView({ behavior: 'smooth' })
+      }
+      return (
             <>
                   <nav>
                         <div className={styles.navItens}>
-                              <a href="#" className={styles.navLink}>
+                              <button onClick={() => scrollToSection(homeRef)} className={styles.navLink}>
                                     <img src={home} alt="" />
                                     HOME
-                              </a>
+                              </button>
 
-                              <a href="#" className={styles.navLink}>
+                              <button onClick={() => scrollToSection(techRef)} className={styles.navLink}>
                                     <img src={webDevelopment} alt="" />
                                     TECNOLOGIAS
-                              </a>
+                              </button>
 
-                              <a href="#" className={styles.navLink}>
+                              <button onClick={() => scrollToSection(techRef)} className={styles.navLink}>
                                     <img src={project} alt="" />
                                     PROJETOS
-                              </a>
+                              </button>
 
-                              <a href="#" className={styles.navLink}>
+                              <button onClick={() => scrollToSection(techRef)} className={styles.navLink}>
                                     <img src={contact} alt="" />
                                     CONTATO
-                              </a>
+                              </button>
                         </div>
 
                   </nav>
