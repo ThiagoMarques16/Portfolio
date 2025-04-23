@@ -24,3 +24,8 @@
 
 }
 
+@media (max-width: 600px) {
+      .technologiesTitle{
+            padding-top: 20%;
+      }
+}
