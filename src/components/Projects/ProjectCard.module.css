@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stick+No+Bills:wght@200..800&display=swap");
+
+.projectCard {
+      width: 250px;
+      max-width: 280px;
+      height: auto;
+      background: linear-gradient(145deg, rgba(15, 17, 26, 0.9), rgba(9, 10, 14, 0.9));
+      padding: 1rem;
+      border-radius: 15px;
+      color: azure;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      font-family: "Inter";
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.projectCard:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.projectCard img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+      max-height: 140px;
+}
+
+.projectAbout {
+      font-size: 0.9rem;
+      color: #dfefff;
+      text-align: left;
+      line-height: 1.4;
+}
+
+.projectTechnologies {
+      color: rgb(0, 132, 255);
+      font-weight: 500;
+      font-size: 0.85rem;
+}
+
+.linksNavigations {
+      width: 100%;
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      justify-content: center;
+}
+
+.linksNavigations a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      background-color: #f5f5f5;
+      padding: 0.5rem 0.9rem;
+      border-radius: 8px;
+      color: #333;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      font-family: "Poppins", sans-serif;
+}
+
+.linksNavigations a:hover {
+      background-color: #1a1a1a;
+      color: #fff;
+      transform: translateY(-2px);
+}
+
+.linksNavigations a svg {
+      font-size: 1.1rem;
+}
+
+/* Linha para tecnologias e status */
+.techStatusLine {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+}
+
+.projectStatus {
+      font-weight: 600;
+      font-size: 0.6rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      text-transform: capitalize;
+      font-family: "Poppins", sans-serif;
+}
+
+/* Status "Em Desenvolvimento" */
+.devStatus {
+      background-color: rgba(255, 217, 0, 0.15);
+      color: #ffd900;
+      border: 1px solid #ffd90077;
+}
+
+/* Status "Concluído" */
+.doneStatus {
+      background-color: rgba(0, 255, 120, 0.1);
+      color: #00ff87;
+      border: 1px solid #00ff8770;
+}

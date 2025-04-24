@@ -30,6 +30,7 @@ nav{
       background-color: transparent;
       border: none;
       font-family: "Poppins", sans-serif;
+      font-size: 16px;
 
 }
 
@@ -40,6 +41,10 @@ nav{
 .navLink:hover{
       color: rgb(6, 191, 237);
       cursor: pointer;
+}
+
+.sectionActivated{
+      color: aquamarine;
 }
 
 @media (max-width: 571px) {
