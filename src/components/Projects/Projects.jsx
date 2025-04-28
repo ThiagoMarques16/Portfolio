@@ -2,13 +2,14 @@ import ProjectCard from './ProjectCard'
 import styles from './Projects.module.css'
 import siteFotografia from '../../img/siteFotografia.png'
 import automatic from '../../img/automatic.png'
+import Title from '../Title/Title'
 
 
 function Projects(){
       return(
             <>
                   <section className={styles.projectsContainer}>
-                        <h2 className={styles.projectTitle}>PROJETOS</h2>
+                        <Title title={"Projetos"}/>
                         <div className={styles.projectsCards}>
                               <ProjectCard 
                                     imgProject={siteFotografia}

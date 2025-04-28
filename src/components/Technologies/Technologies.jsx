@@ -4,12 +4,13 @@ import html from '../../img/html.png'
 import css from '../../img/css.png'
 import javascript from '../../img/javascript.png'
 import react from '../../img/react.png'
+import Title from '../Title/Title'
 
 function Technologies() {
       return (
             <>
                   <div className={styles.technologiesContainer}>
-                        <h1 className={styles.technologiesTitle}>TECNOLOGIAS</h1>
+                        <Title title={"Tecnologias"}/>
                         <div className={styles.technologies}>
 
                               <TechnologiesCard

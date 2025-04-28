@@ -5,13 +5,10 @@
       display: flex;
       align-items: center;
       flex-direction: column;
+      padding: 4rem 1rem;
+      box-sizing: border-box;
 }
 
-.technologiesTitle{
-      color: beige;
-      font-size: 35px;
-      padding-top: 10%;
-}
 
 .technologies{
       justify-content: center;

@@ -5,7 +5,7 @@ import project from '../../img/project.png'
 import contact from '../../img/contact.png'
 import { useEffect, useState } from 'react'
 
-function Nav({ homeRef, techRef, projRef }) {
+function Nav({ homeRef, techRef, projRef, contactRef }) {
 
       const [activeSection, setActiveSection] = useState('');
 
@@ -27,6 +27,8 @@ function Nav({ homeRef, techRef, projRef }) {
             if (homeRef.current) observer.observe(homeRef.current);
             if (techRef.current) observer.observe(techRef.current);
             if (projRef.current) observer.observe(projRef.current);
+            if (contactRef.current) observer.observe(contactRef.current);
+
 
             return () => observer.disconnect()
       }, []);
@@ -50,7 +52,7 @@ function Nav({ homeRef, techRef, projRef }) {
                                     PROJETOS
                               </button>
 
-                              <button onClick={() => scrollToSection(techRef)} className={styles.navLink}>
+                              <button onClick={() => scrollToSection(contactRef)} className={styles.navLink}>
                                     <img src={contact} alt="" />
                                     CONTATO
                               </button>
