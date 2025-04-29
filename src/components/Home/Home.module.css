@@ -99,6 +99,7 @@ h1 {
   display: flex;
   gap: 15px;
   width: 100%;
+  align-items: center;
 }
 
 .dowload{
