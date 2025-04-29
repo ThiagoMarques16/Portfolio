@@ -99,7 +99,6 @@ h1 {
   display: flex;
   gap: 15px;
   width: 100%;
-  align-items: center;
 }
 
 .dowload{
@@ -152,5 +151,7 @@ h1 {
 @media (max-width: 450px) {
   .btns{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
