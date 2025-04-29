@@ -95,6 +95,31 @@ h1 {
   margin-right: 20px;
 }
 
+.btns{
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.dowload{
+  background-color: rgb(75, 116, 0);
+  width: 180px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid rgb(53, 109, 0);
+  border-radius: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  transition: background-color 0.4s ease, opacity 1.5s ease-in-out;
+  color: beige;
+}
+
+.dowload:hover{
+  cursor: pointer;
+  background-color: rgb(0, 223, 93);
+}
+
 
 @media (max-width: 820px) {
       .HomeContainer{
@@ -120,5 +145,11 @@ h1 {
 @media (max-width: 752px) {
   .apresentationContainer h1 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .btns{
+    flex-direction: column;
   }
 }
