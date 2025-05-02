@@ -4,6 +4,7 @@ import Nav from './components/Nav/Nav'
 import Technologies from './components/Technologies/Technologies'
 import Projects from './components/Projects/Projects'
 import Contact from './components/Contact/Contact'
+import './App.css';
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
         <Projects/>
       </div>
 
-      <div id='proj' ref={contactRef}>
+      <div id='contact' ref={contactRef}>
         <Contact/>
       </div>
     </>

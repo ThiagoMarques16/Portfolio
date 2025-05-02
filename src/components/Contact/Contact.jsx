@@ -30,7 +30,9 @@ function Contact() {
     <div className={styles.contactContainer}>
       <Title title={"contato"} />
       <div className={styles.formContainer}>
+
         <form ref={form} onSubmit={sendEmail}>
+          <h3 className={styles.textForms}>Fale comigo usando o formulário abaixo</h3>
           <input type="text" name="name" placeholder="Seu nome" required />
           <input type="email" name="email" placeholder="Seu email" required />
           <input type="text" name="phone" placeholder="Seu telefone" />

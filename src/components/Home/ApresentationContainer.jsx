@@ -1,32 +1,33 @@
-import curriculo from '../../../public/documents/ThiagoMarques.pdf'
-
+import {useIntersectionEffect} from '../../hooks/useIntersectionEffect';
 function ApresentationContainer({ onClick, styles }) {
 
-      function dowloadCv(){
-            const link = document.createElement("a");
-            link.href = curriculo
-            link.download = "ThiagoMarques"
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-      }
+  useIntersectionEffect("hidden", "show", 150); 
 
-      return (
-            <div className={styles.apresentationContainer}>
-                  <h1 className={styles.hidden}>
-                        Olá, eu sou <span className={styles.nome}>Thiago Marques</span>
-                  </h1>
-                  <p className={`${styles.textDeveloper} ${styles.hidden}`}>Desenvolvedor Front-end</p>
-                  <div className={styles.btns}>
-                        <button className={`${styles.aboutMe} ${styles.hidden}`} onClick={onClick}>
-                              Saiba Mais
-                        </button>
-                        <button className={`${styles.dowload} ${styles.hidden}`} onClick={dowloadCv}>
-                              Dowload CV
-                        </button>
-                  </div>
-            </div>
-      )
+  function dowloadCv() {
+    const link = document.createElement("a");
+    link.href = "/documents/ThiagoMarques.pdf";
+    link.download = "ThiagoMarques";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  return (
+    <div className={styles.apresentationContainer}>
+      <h1 className="hidden">
+        Olá, eu sou <span className={styles.nome}>Thiago Marques</span>
+      </h1>
+      <p className={`hidden ${styles.textDeveloper}`}>Desenvolvedor Front-end</p>
+      <div className={styles.btns}>
+        <button className={`hidden ${styles.aboutMe}`} onClick={onClick}>
+          Saiba Mais
+        </button>
+        <button className={`hidden ${styles.dowload}`} onClick={dowloadCv}>
+          Dowload CV
+        </button>
+      </div>
+    </div>
+  );
 }
 
-export default ApresentationContainer
+export default ApresentationContainer;

@@ -1,4 +1,4 @@
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -9,6 +9,7 @@ body{
   align-items: center;
   color: white;
   justify-content: space-around;
+  position: relative;
 }
 
 .videoBackground {
@@ -26,7 +27,6 @@ body{
   flex-direction: column;
   gap: 10px;
   padding: 0px 30px;
-      
 }
 
 .hidden {
@@ -88,20 +88,7 @@ h1 {
   cursor: pointer;
 }
 
-
-.banner img {
-  width: 450px;
-  transition: width 0.4s ease, opacity 2s ease-in-out;
-  margin-right: 20px;
-}
-
-.btns{
-  display: flex;
-  gap: 15px;
-  width: 100%;
-}
-
-.dowload{
+.dowload {
   background-color: rgb(75, 116, 0);
   width: 180px;
   text-align: center;
@@ -115,31 +102,40 @@ h1 {
   color: beige;
 }
 
-.dowload:hover{
+.dowload:hover {
   cursor: pointer;
   background-color: rgb(0, 223, 93);
 }
 
+.banner img {
+  width: 450px;
+  transition: width 0.4s ease, opacity 2s ease-in-out;
+  margin-right: 20px;
+}
+
+.btns {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
 
 @media (max-width: 820px) {
-      .HomeContainer{
-            flex-direction: column-reverse;
-            justify-content: center;
-            gap: 15px;
-      }
+  .HomeContainer {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 15px;
+  }
 
-      .banner img {
-            width: 300px;
-            margin-right: 0px;
-      }
+  .banner img {
+    width: 300px;
+    margin-right: 0px;
+  }
 
-      .apresentationContainer {
-            text-align: center;
-           align-items: center;
-           gap: 20px;
-      }
-
-
+  .apresentationContainer {
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 752px) {
@@ -149,7 +145,7 @@ h1 {
 }
 
 @media (max-width: 450px) {
-  .btns{
+  .btns {
     flex-direction: column;
     justify-content: center;
     align-items: center;

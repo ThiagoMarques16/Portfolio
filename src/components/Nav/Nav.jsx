@@ -52,7 +52,7 @@ function Nav({ homeRef, techRef, projRef, contactRef }) {
                                     PROJETOS
                               </button>
 
-                              <button onClick={() => scrollToSection(contactRef)} className={styles.navLink}>
+                              <button onClick={() => scrollToSection(contactRef)} className={`${activeSection === 'contact' ? styles.sectionActivated : ""} ${styles.navLink}`}>
                                     <img src={contact} alt="" />
                                     CONTATO
                               </button>

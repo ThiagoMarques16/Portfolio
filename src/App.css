@@ -1,4 +1,48 @@
-*{
-      margin: 0;
-      padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Classe base de animação, que pode ser sobrescrita */
+.hidden {
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+}
+
+/* Animações para diferentes direções */
+.slide-left {
+  transform: translateX(-50px);
+}
+
+.slide-right {
+  transform: translateX(50px);
+}
+
+.slide-up {
+  transform: translateY(50px);
+}
+
+.slide-down {
+  transform: translateY(-50px);
+}
+
+/* Quando estiver visível, aplica a transformação */
+.show.slide-left {
+  transform: translateX(0);
+}
+
+.show.slide-right {
+  transform: translateX(0);
+}
+
+.show.slide-up {
+  transform: translateY(0);
+}
+
+.show.slide-down {
+  transform: translateY(0);
 }

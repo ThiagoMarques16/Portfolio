@@ -1,29 +1,12 @@
-import { useEffect, useState } from 'react'
 import styles from './Home.module.css'
 import ApresentationCard from './ApresentationCard'
 import ApresentationContainer from './ApresentationContainer'
 import BannerImage from './BannerImage'
+import { useState } from 'react'
 
 function Home() {
+
   const [mostrarPagina, setMostrarPagina] = useState(false)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add(styles.show)
-          observer.unobserve(entry.target)
-        }
-      })
-    })
-
-    const hiddenElements = document.querySelectorAll(`.${styles.hidden}`)
-    hiddenElements.forEach((el) => observer.observe(el))
-
-    return () => {
-      hiddenElements.forEach((el) => observer.unobserve(el))
-    }
-  }, [])
 
   const ativarPagina = () => setMostrarPagina(true)
   const fecharPagina = () => setMostrarPagina(false)
