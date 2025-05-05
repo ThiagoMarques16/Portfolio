@@ -37,7 +37,7 @@ function Nav({ homeRef, techRef, projRef, contactRef }) {
             <>
                   <nav>
                         <div className={styles.navItens}>
-                              <button onClick={() => scrollToSection(homeRef)} className={`${activeSection === 'home' ? styles.sectionActivated : ""} ${styles.navLink}`}>
+                              <button translate='no' onClick={() => scrollToSection(homeRef)} className={`${activeSection === 'home' ? styles.sectionActivated : ""} ${styles.navLink}`}>
                                     <img src={home} alt="" />
                                     HOME
                               </button>
