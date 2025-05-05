@@ -27,6 +27,30 @@ function Technologies() {
           <TechnologiesCard image={react} title={"React"} />
         </div>
       </div>
+
+      <div className={styles.softSkilsContainer}>
+        <Title title={"Soft Skills"} />
+        <div className={styles.softSkills}>
+          <div className={styles.skill}>
+            <p>Comunicação</p>
+          </div>
+          <div className={styles.skill}>
+            <p>Trabalho em equipe</p>
+          </div>
+          <div className={styles.skill}>
+            <p>Adaptabilidade</p>
+          </div>
+          <div className={styles.skill}>
+            <p>Gestão do tempo</p>
+          </div>
+          <div className={styles.skill}>
+            <p>Aprendizado contínuo</p>
+          </div>
+          <div className={styles.skill}>
+            <p>Curiosidade e proatividade</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,19 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 120px;
+  background-color: rgb(13, 12, 12);
+  gap: 30px;
+}
+
+.icon {
+  color: #007bff;
+  transition: color 0.3s ease, transform 0.5s ease-in-out;
+}
+
+.icon:hover {
+  color: #007a12;
+  transform: translateY(-10px);
+}

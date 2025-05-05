@@ -5,6 +5,7 @@ import Technologies from './components/Technologies/Technologies'
 import Projects from './components/Projects/Projects'
 import Contact from './components/Contact/Contact'
 import './App.css';
+import Footer from './components/Footer/Footer'
 
 
 function App() {
@@ -15,21 +16,25 @@ function App() {
   return (
     <>
 
-      <Nav homeRef={homeRef} techRef={techRef} projRef={projRef} contactRef={contactRef}/>
+      <Nav homeRef={homeRef} techRef={techRef} projRef={projRef} contactRef={contactRef} />
       <div id='home' ref={homeRef}>
-        <Home/>
+        <Home />
       </div>
 
       <div id='tech' ref={techRef}>
-        <Technologies/>
+        <Technologies />
       </div>
 
       <div id='proj' ref={projRef}>
-        <Projects/>
+        <Projects />
       </div>
 
       <div id='contact' ref={contactRef}>
-        <Contact/>
+        <Contact />
+      </div>
+
+      <div id='socialMedia'>
+        <Footer />
       </div>
     </>
   )
