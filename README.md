@@ -1,12 +1,24 @@
-# React + Vite
+# Portfólio de Thiago Marques 👨‍💻
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o meu portfólio pessoal, onde apresento os projetos que desenvolvi e compartilho minha experiência com desenvolvimento web. Acesse o portfólio ao vivo [aqui](https://thiagomarques.netlify.app/) 🌐.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- HTML 💻
+- CSS 🎨
+- JavaScript ⚡
+- React ⚛️
 
-## Expanding the ESLint configuration
+## 📋 Descrição
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+O portfólio foi desenvolvido para apresentar os projetos que desenvolvi ao longo da minha jornada como desenvolvedor. Ele inclui seções com detalhes sobre cada projeto, como tecnologias utilizadas, links para visualização e informações sobre cada um.
+
+## 👀 Visualização
+
+Para visualizar meu portfólio, basta acessar o link abaixo:
+
+[https://thiagomarques.netlify.app/](https://thiagomarques.netlify.app/) 🔗
+
+## 📜 Licença
+
+Este projeto está sob a licença [MIT](LICENSE) 📄.
